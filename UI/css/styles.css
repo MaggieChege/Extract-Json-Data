@@ -1,0 +1,356 @@
+body{
+	margin: 0 auto;
+	font-family: sans-serif;
+	background-color: rgb(245, 247, 251);
+}
+
+.container{
+	width: 400px;
+	height: 300px;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 4px;
+	border: 3px;
+	margin-top: 150px;
+}
+.container img{
+	width: 150px;
+	height: 120px;
+	margin-top: -70px;
+	margin-bottom: 30px
+}
+
+input[type="text"],input[type='password']{
+	width: 150px;
+	height: 35px;
+	margin-bottom: 30px;
+	padding-left: 30px;
+}
+.form-input::before{
+	position: absolute;
+	font-family: "FontAwesome";
+	font-size: 30px;
+	padding-left: 40px
+	padding-top: 5px
+
+}
+
+
+.form-input:last-child::before{
+	content: "\f502";
+	padding-left: 40p
+}
+
+
+.btn-login{
+	padding:15px 25px;
+	color: #fff;
+	background-color:#1c9797 ;
+	border:none;
+	border-radius: 5px;
+}
+
+.topnav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 60px;
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #1c9797;
+	z-index: 10;
+}
+
+
+.email_b{
+	position: relative;
+}
+.email_b:before {
+	font-family: "FontAwesome";
+	content: "\f003";
+	position: absolute;
+	left: 4px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.pass_b{
+	position: relative;
+}
+.pass_b:before {
+	font-family: "FontAwesome";
+	content: "\f023";
+	position: absolute;
+	left: 4px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.topnav{
+	background-color: #33363a;
+	height: 50px;
+}
+
+.brand{
+	position: absolute;
+	left: 50%;
+	margin-left: -50px !important;  /* 50% of your logo width */
+	display: block;
+}
+
+.anothertopnav{
+	background-color: #1c9797;
+	height: 50px;
+}
+.mysearch{
+
+	position: relative;
+	left: 4px;
+	border-radius: 4px;
+	height: 30px;
+	width: 200px;
+	margin-top: 10px;
+}
+.mysearch:before{
+	font-family: "FontAwesome";
+	content: "\f002";
+}
+
+
+#cssmenu {
+
+	width: 160px;
+	position: fixed;
+	margin-top: 250px;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+#cssmenu i {
+	margin-right: 5px;
+}
+#cssmenu ul {
+	display: block;
+	margin: 0;
+	color: #fff;
+	padding: 0;
+	list-style: none;
+	line-height: 1;
+}
+#cssmenu ul li {
+	position: relative;
+	background-color: #33363a;
+	color: #fff;
+	display: block;
+}
+#cssmenu ul li a {
+	display: block;
+	background-color: #33363a;
+	text-decoration: none;
+	position: relative;
+}
+#cssmenu > ul {
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+
+	background: #ffffff;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+#cssmenu > ul > li:first-child > a {
+	border-radius: 3px 3px 0 0;
+}
+#cssmenu > ul > li:last-child > a {
+	border-radius: 0 0 3px 3px;
+}
+#cssmenu > ul > li:not(:last-child) {
+	border-bottom: 1px solid #cccccc;
+}
+#cssmenu > ul > li.active > a {
+	color: #777777;
+	background-color: #e6e6e6;
+}
+#cssmenu > ul > li.has-sub > a::after {
+	content: '';
+	position: absolute;
+	display: block;
+	border: 5px solid transparent;
+	border-top-color: #888888;
+	right: 15px;
+	top: 17px;
+	transition: all .25s ease;
+	transform-origin: 0 25%;
+}
+#cssmenu > ul > li.has-sub.active > a::after {
+	transform: rotateX(180deg);
+	border-top-color: #777777;
+}
+#cssmenu > ul > li:hover > a::after {
+	border-top-color: #777777;
+}
+#cssmenu > ul > li > a {
+	padding: 12px 15px;
+	color: #888888;
+	transition: all 0.3s ease-out;
+	font-size: 14px;
+}
+#cssmenu > ul > li > a:hover {
+	color: #777777;
+	background-color: #e6e6e6;
+}
+#cssmenu ul ul li.active > a {
+	background-color: #f2f2f2;
+	color: #777777;
+}
+#cssmenu ul ul li.has-sub > a::after {
+	content: '';
+	position: absolute;
+	display: block;
+	border: 5px solid transparent;
+	border-top-color: #888888;
+	right: 15px;
+	top: 15px;
+	transition: all .25s ease;
+	transform-origin: 0 25%;
+}
+#cssmenu ul ul li.has-sub.active > a::after {
+	transform: rotateX(180deg);
+	border-top-color: #777777;
+}
+#cssmenu ul ul li:hover > a::after {
+	border-top-color: #777777;
+}
+#cssmenu ul ul li a {
+	padding: 10px 15px;
+	font-size: 14px;
+	color: #888888;
+	transition: all 0.3s ease-out;
+}
+#cssmenu ul ul li a:hover {
+	background-color: #f2f2f2;
+	color: #777777;
+}
+#cssmenu ul ul ul li a {
+	padding-left: 25px;
+}
+.main{
+	margin-left:170px;
+	margin-top: -170px;
+}
+.card {
+	height: 120px;
+	width: 250px;
+	background-color: #fff;
+	border: 1px solid rgba(0, 40, 100, 0.12);
+	border-color: #23bebe
+	box-sizing: border-box;
+	color: #000;
+	border-radius: 3px; 
+	margin-left: 20px;
+	margin-right: 10px;
+	padding-left: 80px;
+	margin-top: 250px;
+}
+
+.card-container {
+	margin-left: 10px;
+	margin-right: 10px;
+	display: flex;
+}
+
+footer{
+	width:100%;
+	text-align: center;
+	position : fixed;
+	bottom : 0;
+	background-color: #1c9797;
+}
+/*images grid0*/
+
+.row {
+	/*display: flex;*/
+	flex-wrap: wrap;
+	padding: 0 4px;
+	/*margin-top: 200px;*/
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+	flex: 25%;
+	max-width: 25%;
+
+	padding: 0 4px;
+}
+
+.column img {
+/*width: 120px;
+height:  120px;*/
+margin-top: 140px;
+/*vertical-align: middle*/;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+	.column {
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+
+/*Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.column {
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+
+.w3-quarter{
+	border: 1px solid #ddd;
+	height: 250px;
+	margin-top: 280px;
+}
+.w3-quarter img{
+	/*border: 1px solid #ddd;*/
+	width: 230px;
+	height: 250px;
+	
+}
+.w3-quarter img button{
+
+	margin-top: 20px;
+}
+
+.btn-cart{
+	padding:15px 25px;
+	color: #fff;
+	content: "\f07a";
+	background-image: 
+	margin-top: 20px;
+	background-color:#1c9797 ;
+	border:none;
+	border-radius: 5px;
+}
+.btn-cart:before{
+	padding:15px 25px;
+	color: #fff;
+	font-family: "FontAwesome";
+	content: "\f07a";
+	background-image: 
+	margin-top: 20px;
+	background-color:#1c9797 ;
+	border:none;
+	border-radius: 5px;
+}
+/*pop up form. Hidden by default*/
+.form-popup {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  margin-left: 50px;
+  background-color: rgb(245, 247, 251);
+  right: 1px;
+  border: 5px solid #f1f1f1;
+  /*z-index: 9;*/
+}
+
+/*#1c9797  */
+/*#33363a*/
